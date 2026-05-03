@@ -10,7 +10,7 @@ export default function PortfolioPreview() {
         {/* Background */}
         <div className="absolute inset-0">
           <Image
-            src="/portfolio/hero-bg.png"
+            src="/public/portfolio/hero-bg.png"
             alt="Hero background"
             fill
             className="object-cover"
@@ -25,7 +25,7 @@ export default function PortfolioPreview() {
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-teal-400/50 shadow-2xl">
               <Image
-                src="/portfolio/profile-avatar.png"
+                src="/public/portfolio/profile-avatar.png"
                 alt="Md. Sanaullah Asif"
                 width={128}
                 height={128}
@@ -149,7 +149,7 @@ export default function PortfolioPreview() {
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
               <div className="relative h-56 overflow-hidden">
                 <Image
-                  src="/portfolio/ai-automation.png"
+                  src="/public/public/portfolio/ai-automation.png"
                   alt="AI Automation Solutions"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -185,7 +185,7 @@ export default function PortfolioPreview() {
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
               <div className="relative h-56 overflow-hidden">
                 <Image
-                  src="/portfolio/education-management.png"
+                  src="/public/portfolio/education-management.png"
                   alt="Education Management System"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
