@@ -1,10 +1,18 @@
-// ===== PROFILE =====
+// =====================================================
+// PORTFOLIO CONTENT CONFIGURATION
+// =====================================================
+// Edit this file to update your portfolio content.
+// No need to touch the code in page.tsx!
+// =====================================================
+
+// Profile Information
 export const profile = {
   name: "Md. Sanaullah Asif",
   headline: "Senior FinTech Engineer & Automation Specialist",
   email: "me.sanaullah.asif@gmail.com",
   github: "https://github.com/abefimrs",
-  avatar: "/portfolio/profile-avatar.png",  // ← Replace with your photo
+  githubUsername: "abefimrs",
+  avatar: "/portfolio/profile-avatar.png", // Replace with your real photo!
   tags: [
     "9+ years building payment infrastructure",
     "Make.com Certified",
@@ -13,77 +21,139 @@ export const profile = {
   ],
 }
 
-// ===== ADD NEW PROJECT =====
+// About Section
+export const about = `I'm the engineer behind shurjoPay's core payment engine — Bangladesh's fastest-growing fintech platform. With 9+ years building payment gateways, bank integrations, and PCI DSS compliant systems, I bring deep technical expertise to every project. Now combining that backend depth with Make.com automation and AI integration to build smarter solutions.`
+
+// Skills - Array of skill objects
+export const skills = [
+  { name: "Laravel", category: "Backend" },
+  { name: "PHP", category: "Backend" },
+  { name: "Node.js", category: "Backend" },
+  { name: "React", category: "Frontend" },
+  { name: "Next.js", category: "Frontend" },
+  { name: "Tailwind CSS", category: "Frontend" },
+  { name: "Make.com", category: "Automation" },
+  { name: "AI/LLM", category: "Automation" },
+  { name: "MySQL", category: "Database" },
+  { name: "Redis", category: "Database" },
+  { name: "AWS", category: "Cloud" },
+  { name: "Docker", category: "DevOps" },
+]
+
+// Skills Categories for display
+export const skillCategories = [
+  {
+    title: "Backend",
+    icon: "server",
+    skills: ["Laravel", "PHP", "Node.js"],
+  },
+  {
+    title: "Frontend",
+    icon: "monitor",
+    skills: ["React", "Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Automation",
+    icon: "zap",
+    skills: ["Make.com", "AI/LLM", "APIs"],
+  },
+  {
+    title: "Cloud & DB",
+    icon: "cloud",
+    skills: ["AWS", "MySQL", "Redis"],
+  },
+]
+
+// Certifications
+export const certifications = [
+  {
+    title: "Make.com Certified",
+    description: "Certified Automation Expert",
+    icon: "badge",
+    color: "purple", // purple, teal, blue, orange
+    verified: true,
+    link: null, // Add link to certification if available
+  },
+  {
+    title: "Anthropic AI",
+    description: "AI Integration Specialist",
+    icon: "lightbulb",
+    color: "teal",
+    verified: true,
+    link: null,
+  },
+]
+
+// Projects - Array of project objects
 export const projects = [
   {
     title: "Lead Capture Automation",
     description: "Automated lead capture system integrating web forms with CRM platforms. Built with Make.com to streamline lead processing, qualification, and distribution — reducing manual work by 80%.",
     image: "/portfolio/lead-capture.png",
     tags: ["Make.com", "Automation", "CRM"],
-    link: null,  // or null for private
+    link: null, // Add project link (GitHub, live demo, etc.)
     featured: true,
   },
-   {
+  {
     title: "AI Question Answering System",
     description: "Intelligent Q&A system powered by AI/LLM technology. Enables natural language queries against documentation and knowledge bases with contextual, accurate responses.",
     image: "/portfolio/ai-qa-system.png",
     tags: ["AI/LLM", "RAG", "Node.js"],
-    link: null,  // or null for private
+    link: null,
     featured: true,
   },
   {
-    title: "Transaction Dashboard/API",
+    title: "Transaction API",
     description: "RESTful API for payment transaction processing. Handles validation, routing, and status tracking with comprehensive documentation and webhook support.",
     image: "/portfolio/transaction-api.png",
     tags: ["Laravel", "REST API", "Payments"],
-    link: "https://github.com/abefimrs/transaction-dashboard",  // or null for private
+    link: "https://github.com/abefimrs",
     featured: true,
   },
   {
     title: "ShurjoPay Payment Engine",
     description: "Core payment gateway engine powering Bangladesh's fastest-growing fintech platform. Built bank integrations, transaction routing, and PCI DSS compliant systems serving millions of transactions.",
-    image: "/portfolio/shurjopay.pngg",
+    image: "/portfolio/shurjopay.png",
     tags: ["Laravel", "FinTech", "PCI DSS"],
-    link: null,  // or null for private
+    link: null, // Private/confidential
     featured: true,
   },
-  // ... more projects
 ]
 
-// ===== ADD NEW SKILL =====
-export const skills = [
-  { name: "Laravel, PHP, Node.js", category: "Backend" },
-  { name: "React, Next.js, Tailwind", category: "Frontend" },
-  { name: "Make.com, AI/LLM, APIs", category: "Automation" },
-  { name: "AWS, MySQL, Redis", category: "Cloud & DB" },
-  // ... more skills
-]
-
-// ===== ADD NEW CERTIFICATION =====
-export const certifications = [
+// Social Links
+export const socialLinks = [
   {
-    title: "AWS Certified",
-    description: "Cloud Practitioner",
-    icon: "badge",
-    color: "orange",  // purple, teal, blue, orange
-    verified: true,
-    link: "https://www.credly.com/badges/e2cad686-bf52-4606-a59f-8fb4d1b88cfa",
+    name: "Email",
+    url: "mailto:me.sanaullah.asif@gmail.com",
+    icon: "email",
   },
-   {
-    title: "Make.com Certified",
-    description: "Certified Automation Expert",
-    icon: "badge",
-    color: "purple",  // purple, teal, blue, orange
-    verified: true,
-    link: "https://www.credly.com/badges/f6419123-3378-4bd2-80a4-76af303712f1/public_url",
+  {
+    name: "GitHub",
+    url: "https://github.com/abefimrs",
+    icon: "github",
   },
-   {
-    title: "Anthropic AI",
-    description: "AI Integration Specialist",
-    icon: "badge",
-    color: "blue",  // purple, teal, blue, orange
-    verified: true,
-    link: "https://verify.skilljar.com/c/sd6drmvpxhgv",
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/md-sanaullah-b1359818a",
+    icon: "linkedin",
   },
-  // ... more certifications
+  {
+    name: "X.COM",
+    url: "https://x.com/A81362Asif",
+    icon: "x.com",
+  },
 ]
+
+// SEO Metadata
+export const seo = {
+  title: "Md. Sanaullah Asif | Senior FinTech Engineer",
+  description: "Senior FinTech Engineer & Automation Specialist with 9+ years building payment infrastructure. Make.com Certified, Laravel Expert. Available for remote work.",
+  keywords: ["FinTech", "Payment Gateway", "Laravel", "Make.com", "Automation", "Bangladesh", "shurjoPay", "PCI DSS", "Backend Developer", "Node.js", "React"],
+  url: "https://abefimrs.github.io/portfolio/",
+}
+
+// Footer
+export const footer = {
+  copyright: `© ${new Date().getFullYear()} Md. Sanaullah Asif. All rights reserved.`,
+  tagline: "Built with passion for fintech innovation.",
+}
