@@ -12,7 +12,7 @@ export const profile = {
   email: "me.sanaullah.asif@gmail.com",
   github: "https://github.com/abefimrs",
   githubUsername: "abefimrs",
-  avatar: "/portfolio/profile-avatar.png", // Replace with your real photo!
+  avatar: "./portfolio/profile-avatar.png", // Replace with your real photo!
   tags: [
     "9+ years building payment infrastructure",
     "Make.com Certified",
@@ -89,7 +89,7 @@ export const projects = [
   {
     title: "Lead Capture Automation",
     description: "Automated lead capture system integrating web forms with CRM platforms. Built with Make.com to streamline lead processing, qualification, and distribution — reducing manual work by 80%.",
-    image: "/portfolio/lead-capture.png",
+    image: "./portfolio/lead-capture.png",
     tags: ["Make.com", "Automation", "CRM"],
     link: null, // Add project link (GitHub, live demo, etc.)
     featured: true,
@@ -97,7 +97,7 @@ export const projects = [
   {
     title: "AI Question Answering System",
     description: "Intelligent Q&A system powered by AI/LLM technology. Enables natural language queries against documentation and knowledge bases with contextual, accurate responses.",
-    image: "/portfolio/ai-qa-system.png",
+    image: "./portfolio/ai-qa-system.png",
     tags: ["AI/LLM", "RAG", "Node.js"],
     link: null,
     featured: true,
@@ -105,7 +105,7 @@ export const projects = [
   {
     title: "Transaction API",
     description: "RESTful API for payment transaction processing. Handles validation, routing, and status tracking with comprehensive documentation and webhook support.",
-    image: "/portfolio/transaction-api.png",
+    image: "./portfolio/transaction-api.png",
     tags: ["Laravel", "REST API", "Payments"],
     link: "https://github.com/abefimrs",
     featured: true,
@@ -113,7 +113,7 @@ export const projects = [
   {
     title: "ShurjoPay Payment Engine",
     description: "Core payment gateway engine powering Bangladesh's fastest-growing fintech platform. Built bank integrations, transaction routing, and PCI DSS compliant systems serving millions of transactions.",
-    image: "/portfolio/shurjopay.png",
+    image: "./portfolio/shurjopay.png",
     tags: ["Laravel", "FinTech", "PCI DSS"],
     link: null, // Private/confidential
     featured: true,

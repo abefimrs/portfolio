@@ -91,7 +91,6 @@ export default function Portfolio() {
                 className="object-cover"
               />
             </div>
-            <p className="text-teal-300 text-sm mt-3 italic">Add your real photo for better client engagement</p>
           </div>
           
           {/* Name & Headline */}
