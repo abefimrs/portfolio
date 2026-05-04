@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ["FinTech", "Payment Gateway", "Laravel", "Make.com", "Automation", "Bangladesh", "shurjoPay", "PCI DSS", "Backend Developer"],
   authors: [{ name: "Md. Sanaullah Asif" }],
   icons: {
-    icon: "/portfolio/favicon.ico",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Md. Sanaullah Asif | Senior FinTech Engineer",
