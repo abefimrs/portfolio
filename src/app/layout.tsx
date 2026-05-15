@@ -45,6 +45,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
         {children}
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.PAYGUARD_WEBHOOK_URL = 'https://hook.eu1.make.com/YOUR_WEBHOOK_ID';
+    `
+  }}
+/>
       </body>
     </html>
   );

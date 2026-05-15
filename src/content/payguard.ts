@@ -156,9 +156,15 @@ export const footer = {
   copyright: `© ${new Date().getFullYear()} PayGuard. All rights reserved.`,
 }
 
-// Make.com Webhook Configuration
-export const webhook = {
-  // Replace with your actual Make.com webhook URL
-  url: process.env.MAKE_WEBHOOK_URL || "",
-  enabled: true, // Set to false to disable webhook calls
-}
+// =====================================================
+// MAKE.COM WEBHOOK SETUP (for static export)
+// =====================================================
+// To connect your Make.com webhook, add this script tag to your
+// deployed HTML or include it in your layout:
+//
+// <script>
+//   window.PAYGUARD_WEBHOOK_URL = 'https://hook.eu1.make.com/YOUR_WEBHOOK_ID';
+// </script>
+//
+// The form will automatically send leads to this webhook URL.
+// =====================================================
