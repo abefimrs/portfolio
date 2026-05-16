@@ -1,159 +1,167 @@
 // =====================================================
-// PORTFOLIO CONTENT CONFIGURATION
+// PAYGUARD SAAS LANDING PAGE CONTENT
 // =====================================================
-// Edit this file to update your portfolio content.
-// No need to touch the code in page.tsx!
+// Edit this file to update your SaaS landing page content.
 // =====================================================
 
-// Profile Information
-export const profile = {
-  name: "Md. Sanaullah Asif",
-  headline: "Senior FinTech Engineer & Automation Specialist",
-  email: "me.sanaullah.asif@gmail.com",
-  github: "https://github.com/abefimrs",
-  githubUsername: "abefimrs",
-  avatar: "./portfolio/profile-avatar.png", // Replace with your real photo!
-  tags: [
-    "9+ years building payment infrastructure",
-    "Make.com Certified",
-    "Laravel Expert",
-    "Available for Remote Work",
+// Brand Information
+export const brand = {
+  name: "PayGuard",
+  tagline: "Never Lose a Transaction Again",
+  logo: "/portfolio/payguard-logo.png", // Add your logo
+  contactEmail: "me.sanaullah.asif@gmail.com",
+}
+
+// Hero Section
+export const hero = {
+  badge: "Built by a shurjoPay Engineer",
+  title: "Never Lose a",
+  titleHighlight: "Transaction",
+  titleEnd: "Again",
+  description:
+    "Automatic detection and resolution of failed payment transactions. No manual reconciliation. No lost revenue. No angry customers.",
+  cta: "Join Early Access — Free",
+  ctaSecondary: "Get Early Access",
+}
+
+// Pain Points (Problem Section)
+export const painPoints = {
+  title: "Sound familiar?",
+  description:
+    "Every merchant faces these problems daily. Most accept them as normal. They're not.",
+  items: [
+    {
+      icon: "money",
+      title: "Ghost Transactions",
+      description:
+        "Customer charged but your system never updated. Money gone, order not fulfilled.",
+    },
+    {
+      icon: "clock",
+      title: "T+1 Settlement Delays",
+      description:
+        "Wait 24+ hours for your own money. Cash flow suffers every single day.",
+    },
+    {
+      icon: "clipboard",
+      title: "Manual Reconciliation",
+      description:
+        "Hours every week matching payment records manually. This should not be your job.",
+    },
   ],
 }
 
-// About Section
-export const about = `I'm the engineer behind shurjoPay's core payment engine — Bangladesh's fastest-growing fintech platform. With 9+ years building payment gateways, bank integrations, and PCI DSS compliant systems, I bring deep technical expertise to every project. Now combining that backend depth with Make.com automation and AI integration to build smarter solutions.`
+// Features (Solution Section)
+export const features = {
+  title: "PayGuard fixes this",
+  titleHighlight: "automatically",
+  description:
+    "Built by engineers who spent 9+ years inside payment gateways. We know exactly where transactions break.",
+  items: [
+    {
+      icon: "search",
+      title: "Instant Detection",
+      description:
+        "Failed or stuck transactions detected in real time — not hours later when your customer complains.",
+    },
+    {
+      icon: "zap",
+      title: "Auto Resolution",
+      description:
+        "System automatically reconciles the transaction and updates your order status. Zero manual work.",
+    },
+    {
+      icon: "bell",
+      title: "Instant Alerts",
+      description:
+        "You and your customer notified immediately with accurate status. No confusion. No complaints.",
+    },
+    {
+      icon: "chart",
+      title: "Full Audit Trail",
+      description:
+        "Every transaction logged with complete history. Compliance ready. Dispute proof.",
+    },
+    {
+      icon: "crypto",
+      title: "Crypto Support",
+      description:
+        "Accept USDT, ETH, BTC alongside traditional payments. Instant settlement. No T+1 delays.",
+    },
+    {
+      icon: "link",
+      title: "Easy Integration",
+      description:
+        "Connect to your existing payment gateway in minutes. No code changes required.",
+    },
+  ],
+}
 
-// Skills - Array of skill objects
-export const skills = [
-  { name: "Laravel", category: "Backend" },
-  { name: "PHP", category: "Backend" },
-  { name: "Node.js", category: "Backend" },
-  { name: "React", category: "Frontend" },
-  { name: "Next.js", category: "Frontend" },
-  { name: "Tailwind CSS", category: "Frontend" },
-  { name: "Make.com", category: "Automation" },
-  { name: "AI/LLM", category: "Automation" },
-  { name: "MySQL", category: "Database" },
-  { name: "Redis", category: "Database" },
-  { name: "AWS", category: "Cloud" },
-  { name: "Docker", category: "DevOps" },
-]
+// How It Works Steps
+export const steps = {
+  title: "How It Works",
+  items: [
+    {
+      number: 1,
+      title: "Connect",
+      description: "Connect your payment gateway via webhook in minutes",
+    },
+    {
+      number: 2,
+      title: "Monitor",
+      description: "PayGuard watches every transaction in real time",
+    },
+    {
+      number: 3,
+      title: "Detect",
+      description: "Failed or stuck transactions identified instantly",
+    },
+    {
+      number: 4,
+      title: "Resolve",
+      description: "Auto-reconciliation updates your system correctly",
+    },
+    {
+      number: 5,
+      title: "Notify",
+      description: "You and customer notified with accurate status",
+    },
+  ],
+}
 
-// Skills Categories for display
-export const skillCategories = [
-  {
-    title: "Backend",
-    icon: "server",
-    skills: ["Laravel", "PHP", "Node.js"],
-  },
-  {
-    title: "Frontend",
-    icon: "monitor",
-    skills: ["React", "Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "Automation",
-    icon: "zap",
-    skills: ["Make.com", "AI/LLM", "APIs"],
-  },
-  {
-    title: "Cloud & DB",
-    icon: "cloud",
-    skills: ["AWS", "MySQL", "Redis"],
-  },
-]
-
-// Certifications
-export const certifications = [
-  {
-    title: "Make.com Certified",
-    description: "Certified Automation Expert",
-    icon: "badge",
-    color: "purple", // purple, teal, blue, orange
-    verified: true,
-    link: null, // Add link to certification if available
-  },
-  {
-    title: "Anthropic AI",
-    description: "AI Integration Specialist",
-    icon: "lightbulb",
-    color: "teal",
-    verified: true,
-    link: null,
-  },
-]
-
-// Projects - Array of project objects
-export const projects = [
-  {
-    title: "Lead Capture Automation",
-    description: "Automated lead capture system integrating web forms with CRM platforms. Built with Make.com to streamline lead processing, qualification, and distribution — reducing manual work by 80%.",
-    image: "./portfolio/lead-capture.png",
-    tags: ["Make.com", "Automation", "CRM"],
-    link: null, // Add project link (GitHub, live demo, etc.)
-    featured: true,
-  },
-  {
-    title: "AI Question Answering System",
-    description: "Intelligent Q&A system powered by AI/LLM technology. Enables natural language queries against documentation and knowledge bases with contextual, accurate responses.",
-    image: "./portfolio/ai-qa-system.png",
-    tags: ["AI/LLM", "RAG", "Node.js"],
-    link: null,
-    featured: true,
-  },
-  {
-    title: "Transaction API",
-    description: "RESTful API for payment transaction processing. Handles validation, routing, and status tracking with comprehensive documentation and webhook support.",
-    image: "./portfolio/transaction-api.png",
-    tags: ["Laravel", "REST API", "Payments"],
-    link: "https://github.com/abefimrs",
-    featured: true,
-  },
-  {
-    title: "ShurjoPay Payment Engine",
-    description: "Core payment gateway engine powering Bangladesh's fastest-growing fintech platform. Built bank integrations, transaction routing, and PCI DSS compliant systems serving millions of transactions.",
-    image: "./portfolio/shurjopay.png",
-    tags: ["Laravel", "FinTech", "PCI DSS"],
-    link: null, // Private/confidential
-    featured: true,
-  },
-]
-
-// Social Links
-export const socialLinks = [
-  {
-    name: "Email",
-    url: "mailto:me.sanaullah.asif@gmail.com",
-    icon: "email",
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/abefimrs",
-    icon: "github",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/md-sanaullah-b1359818a",
-    icon: "linkedin",
-  },
-  {
-    name: "X.COM",
-    url: "https://x.com/A81362Asif",
-    icon: "x.com",
-  },
-]
-
-// SEO Metadata
-export const seo = {
-  title: "Md. Sanaullah Asif | Senior FinTech Engineer",
-  description: "Senior FinTech Engineer & Automation Specialist with 9+ years building payment infrastructure. Make.com Certified, Laravel Expert. Available for remote work.",
-  keywords: ["FinTech", "Payment Gateway", "Laravel", "Make.com", "Automation", "Bangladesh", "shurjoPay", "PCI DSS", "Backend Developer", "Node.js", "React"],
-  url: "https://abefimrs.github.io/portfolio/",
+// Waitlist Form
+export const waitlist = {
+  title: "Get Early Access",
+  description:
+    "Join merchants who are done losing money to failed transactions. First 50 users get 3 months free.",
+  cta: "Join Early Access — Free",
+  successMessage: "You're on the list! We'll be in touch soon with early access details.",
+  counter: "47 merchants already on the waitlist",
+  paymentGateways: [
+    "shurjoPay",
+    "bKash",
+    "Nagad",
+    "Stripe",
+    "PayPal",
+    "Razorpay",
+    "Flutterwave",
+    "Other",
+  ],
 }
 
 // Footer
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} Md. Sanaullah Asif. All rights reserved.`,
-  tagline: "Built with passion for fintech innovation.",
+  tagline:
+    "PayGuard — Built by engineers who lived inside payment gateways for 9 years.",
+  copyright: `© ${new Date().getFullYear()} PayGuard. All rights reserved.`,
 }
+
+// =====================================================
+// MAKE.COM WEBHOOK SETUP
+// =====================================================
+// The webhook URL is configured in: src/app/payguard/page.tsx
+// To change the webhook URL, edit the handleSubmit function.
+//
+// Current webhook URL:
+// https://hook.us2.make.com/e86plxgcn2oabwv4xjjyusudj3sqjw71
+// =====================================================

@@ -116,6 +116,7 @@ export default function PayGuardLanding() {
     try {
       // Make.com webhook URL - edit this to change the webhook
       const webhookUrl = 'https://hook.us2.make.com/e86plxgcn2oabwv4xjjyusudj3sqjw71'
+      const webhookApiKey = 'Pass@1234' // Make.com API key for authentication
 
       const payload = {
         name: formData.name,
@@ -126,12 +127,15 @@ export default function PayGuardLanding() {
         source: 'PayGuard Landing Page',
       }
 
-      // Submit to Make.com webhook
+      // Submit to Make.com webhook with API key
+      // Note: Using CORS mode to allow custom headers
       try {
         await fetch(webhookUrl, {
           method: 'POST',
-          mode: 'no-cors', // Required for cross-origin webhook calls
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'x-make-apikey': webhookApiKey,
+          },
           body: JSON.stringify(payload),
         })
       } catch (webhookError) {
