@@ -114,20 +114,36 @@ export default function PayGuardLanding() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/api/waitlist', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
-      })
+      // Make.com webhook URL - edit this to change the webhook
+      const webhookUrl = 'https://hook.us2.make.com/e86plxgcn2oabwv4xjjyusudj3sqjw71'
 
-      if (response.ok) {
-        setIsSuccess(true)
-      } else {
-        setError('Something went wrong. Please try again.')
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company || '',
+        gateway: formData.gateway || '',
+        timestamp: new Date().toISOString(),
+        source: 'PayGuard Landing Page',
       }
+
+      // Submit to Make.com webhook
+      try {
+        await fetch(webhookUrl, {
+          method: 'POST',
+          mode: 'no-cors', // Required for cross-origin webhook calls
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        })
+      } catch (webhookError) {
+        console.warn('Webhook submission failed:', webhookError)
+      }
+
+      // Save to localStorage as backup
+      const entries = JSON.parse(localStorage.getItem('payguard_waitlist') || '[]')
+      entries.push(payload)
+      localStorage.setItem('payguard_waitlist', JSON.stringify(entries))
+
+      setIsSuccess(true)
     } catch {
       setError('Network error. Please try again.')
     } finally {

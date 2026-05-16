@@ -157,14 +157,11 @@ export const footer = {
 }
 
 // =====================================================
-// MAKE.COM WEBHOOK SETUP (for static export)
+// MAKE.COM WEBHOOK SETUP
 // =====================================================
-// To connect your Make.com webhook, add this script tag to your
-// deployed HTML or include it in your layout:
+// The webhook URL is configured in: src/app/payguard/page.tsx
+// To change the webhook URL, edit the handleSubmit function.
 //
-// <script>
-//   window.PAYGUARD_WEBHOOK_URL = 'https://hook.eu1.make.com/YOUR_WEBHOOK_ID';
-// </script>
-//
-// The form will automatically send leads to this webhook URL.
+// Current webhook URL:
+// https://hook.us2.make.com/e86plxgcn2oabwv4xjjyusudj3sqjw71
 // =====================================================
